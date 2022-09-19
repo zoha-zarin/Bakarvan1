@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Karevan</title>
+</head>
+
+<body dir="ltr">
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmQVbxPcwT9Mq0Rzu4l4pMGXQrfcnbJoj6xbuXL5kQ_y5jqLFR_JN3Tm7Es3j6WLJWijpy_fI-U=w1366-h625"
+          alt=""
+          width="80"
+          height="40"
+          class="d-inline-block align-text-top"
+        />
+      </a>
+      <div class="leftnav">
+        <a class="navbar-ikon" href="#">
+          <img
+            div="rtl"
+            src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmT7qgwiqkNxaUidy913Vf6E2F64VapwZFKtWk_QfjM-nNjcFlCJI7EFbaUB3YJaEONlrJw5FM8=w1366-h625"
+            alt=""
+            width="40"
+            height="42"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <a class="navbar-ikon" href="#">
+          <img
+            div="rtl"
+            src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmTZJseQzW1rYYZEFxm9iEWsbKIoi6fsY6zsdL6UGxjHtBEY5TtfhYxVbgyXwn--n3cLbACp5uQ=w1366-h625"
+            alt=""
+            width="50"
+            height="42"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+    </div>
+  </nav>
+
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+
+    {% for message in messages %}
+        <div class="alert">{{message}}</div>
+    {% endfor %}
+</div>
